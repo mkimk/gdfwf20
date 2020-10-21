@@ -57,7 +57,104 @@
             @media screen and (min-width: 821px) and (max-width: 900px) { /* Nicholas */
             }
             @media screen and (min-width: 741px) and (max-width: 820px) { /* Clear */
+                @keyframes stretch{
+                   
+                   0% {
+                     opacity: 40%;
+                     width:30vw;
+                     height: 80vh;
+                  }
+                  50% {
+                    opacity: 60%;
+                      
+                  }
+                  75%{
+                    opacity: 80%;
+                  }
+                  100% {
+                    opacity: 100%;
+                    width: 50vw;
+                    height: 45vh;
+                    border-radius: 400px 400px;
+                    transform:translateX(200px);
+                    
+                  }
+              }
+
+              
+            
+            @keyframes blink{
+                0%{
+                    background-color:plum;
+                }
+                50%{
+                    background-color:black;
+                }
+                70%{
+                    background-color:blue;
+                }
+                100%{
+                    background-color:coral;
+                }
             }
+
+              body{
+                  background-color:plum;
+                  animation: blink 2s infinite;
+              }
+              
+              #div2 {
+                    width: 600px;
+                    height: 450px;
+                    position: relative;
+                    display: block;
+                    margin-top: 300px;
+                    margin-right: 50px;
+                    background: greenyellow;
+                    border-radius: 350px / 250px;
+                    animation: stretch 2s infinite;
+                    transform-origin: center;
+    }
+            #div3 {
+                width: 300px;
+                height: 300px;
+                position: relative;
+                display: block;
+                background: white;
+                animation: 3s ease-in-out;
+                transform-origin: center;
+            }
+
+            @-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
+
+            #div1 {
+                background: white;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                display: block;
+                margin: 0 80%;
+                transform: rotate(20deg);
+                -webkit-animation:spin 4s linear infinite;
+                animation:spin 4s linear infinite;
+                
+             }
+
+
+            #div1:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 80px;
+                width: 80px;
+                background: white;
+                transform: rotate(135deg);
+            }
+    
+                        
+          }
+            
             @media screen and (min-width: 661px) and (max-width: 740px) { /* Daniel */ 
                 @keyframes stretch{
                    
@@ -141,10 +238,9 @@
                     
                     animation: blink 0.5s infinite;
                     transform-origin: center;
-                }
-
-                
+                }  
             }
+
             @media screen and (min-width: 581px) and (max-width: 660px) { /* Madison */
                 @keyframes stretch {
                     0% {
