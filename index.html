@@ -464,6 +464,60 @@
                     transform: scale(6);
                 }
             }
+
+
+        }
+
+        @media screen and (min-width: 901px) and (max-width: 980px) {
+            /* Forough */
+            body{
+                
+                
+                animation-name: backgrounds; 
+                animation-duration:2.5s;
+                animation-iteration-count: infinite;
+            }
+
+        
+
+            #div1{
+                width: 200px;
+                height: 200px;
+                background: red;
+                display: block;
+                margin: 0 auto 0 auto;
+                animation-name: bounce;
+                animation-timing-function: ease-in-out; 
+                animation-duration:2.5s;
+                animation-iteration-count: infinite ; 
+            }
+
+            @keyframes bounce {
+                0% {transform: translateY(0) rotate(180deg);}
+                0% {background:red;}
+                20% {transform: translateY(480px) rotate(0deg);}
+                20% {background:#00FF00;}
+                40% {transform: translateY(0) rotate(180deg);}
+                40% {background:#0000ff;}
+                60% {transform: translateY(480px) rotate(0deg);}
+                60% {background:red;}
+                80% {transform: translateY(0) rotate(120deg);}
+                80% {background:#00FF00;}
+                100% {transform: translateY(480px) rotate(0deg);}
+                100% {background:#0000ff;}
+            }
+
+            @keyframes backgrounds {
+                0% {background-color:#0000ff;}
+                20%{background-color:red;}
+                40% {background-color:#00FF00;}
+                60%{background-color:#0000ff;}
+                80% {background-color:red;}
+                100%{background-color:#00FF00;}
+            }
+
+ 
+            }
         }
     </style>
 </head>
