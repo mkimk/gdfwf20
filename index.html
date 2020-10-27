@@ -65,14 +65,6 @@
             /* Shenandoah */
         }
         
-        @media screen and (min-width: 981px) and (max-width: 1060px) {
-            /* Nailah */
-        }
-        
-        @media screen and (min-width: 901px) and (max-width: 980px) {
-            /* Forough */
-        }
-        
         @media screen and (min-width: 821px) and (max-width: 900px) {
             /* Nicholas */
             #div4,
@@ -518,7 +510,84 @@
 
  
             }
-        }
+        
+        @media screen and (min-width: 981px) and (max-width: 1060px) {
+            /* NAILAH */
+            body{
+                background-color: rgb(0,0,5);
+
+            }
+                #div16 {
+                    width: 300px;
+                    height: 300px;
+                    top: 15%;
+                    left: 25%;
+                    padding: 2px;
+                    margin: 10%;
+                    position: absolute;
+                    background: rgb(219, 252, 3);
+                    box-shadow: 0 0 0 0 rgba(219, 252, 3, 1);
+                    animation: move 7.5s infinite;
+                    animation-timing-function: ease-in-out; 
+                }
+
+            @keyframes move {
+                0% {
+                 transform: scale(2);
+                 box-shadow: 0 0 0 0 rgba(219, 252, 3, 0.25);
+                }
+                
+                 35% {
+                   transform: scale(1);
+                   box-shadow: 0 0 0 10px rgba(219, 252, 3, 0.25);
+                 }
+
+                 50% {
+                    transform: scale(0.5);
+                    transform: rotate(45deg);
+                    transform-origin: center;
+                    background: rgb(252, 3, 119);
+                    box-shadow: 0 0 0 15px rgba(252, 3, 119, 0.5);
+                 }
+
+                 60% {
+                    transform: scale(0.25);
+                    transform: rotate(-45deg);
+                    transform-origin: last;
+                    background: rgb(252, 3, 119);
+                    box-shadow: 0 0 0 10px rgba(252, 3, 119, 0.25)
+                 }
+
+                 70% {
+                    transform: scale(1);
+                    transform: scale(1.5);
+                    background: rgb(252, 3, 119);
+                    box-shadow: 0 0 0 10px rgba(252, 3, 119, 0.25);
+                 }
+
+                 80% {
+                    transform: rotate(45deg);
+                    transform-origin: last;
+                    background: rgb(0,0,255);
+                     box-shadow: 0 0 0 12.5px rgba(0, 0, 255, 0.25);
+                 }
+
+                 90% {
+                    transform: rotate(90deg);
+                     transform: scale(2);
+                     box-shadow: 0 0 0 15px rgba(219, 252, 3, 0.25);
+                 }
+    
+                 100% {
+                    transform: scale(2);
+                     box-shadow: 0 0 0 0px rgba(219, 252, 3, 0.25);
+
+                }
+            }
+           
+         }
+
+
     </style>
 </head>
 
