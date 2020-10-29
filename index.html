@@ -575,6 +575,25 @@
         
         @media screen and (min-width: 581px) and (max-width: 660px) {
             /* Madison */
+            body {
+                background-color: LightSlateGray;
+            }
+            #div1 {
+                display: block;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                width: 10vw;
+                height: 10vw;
+                padding: 20%;
+                background-color: #000;
+                transform: translateX(-50%) translateY(-50%);
+                border-radius: 5%;
+                padding: 0;
+                animation: stretch 6s infinite;
+                transform-origin: center;
+            }
+
             @keyframes stretch {
                 0% {
                     transform: scale(.5);
@@ -595,16 +614,6 @@
                     left: 500px;
                     top: 500px;
                 }
-            }
-            body {
-                background-color: LightSlateGray;
-            }
-            #div1 {
-                display: block;
-                border-radius: 5%;
-                padding: 0;
-                animation: stretch 6s infinite;
-                transform-origin: center;
             }
         }
         
