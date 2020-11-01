@@ -162,12 +162,303 @@
         
         @media screen and (min-width: 1301px) and (max-width: 1380px) {
             /* Labelle */
+            body {
+                background-color: #1e236b;
+                animation: glow 8s 1;
+            }
+
+            #div16 {
+                background: white;
+                width: 80px;
+                height: 80px;
+                position: absolute;
+                transform: rotate(20deg);
+                -webkit-animation: flyfly 10s linear infinite;
+                animation: flyfly 10s linear infinite;
+            }
+            #div16:before {
+                content: "";
+                position: absolute;
+                top: -50;
+                left: -500;
+                height: 80px;
+                width: 80px;
+                background: white;
+                transform: rotate(135deg);
+            }
+            #div2{
+                animation: bigger 2.5s 1;
+            }
+
+            #div3{
+                position: absolute;
+                top: 600px;
+                left:200px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars2 10s infinite;
+            }
+            #div4{
+                position: absolute;
+                top: 300px;
+                left:700px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars 10s infinite;
+            }
+            #div5{
+                position: absolute;
+                top: 700px;
+                left:954px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars 10s infinite;
+            }
+            #div6{
+                position: absolute;
+                top: 270px;
+                left:231px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars2 10s infinite;
+            }
+            #div7{
+                position: absolute;
+                top: 503px;
+                left:1029px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars2 10s infinite;
+            }
+
+            #div8{
+                position: absolute;
+                top: 89px;
+                left:1045px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars 10s infinite;
+            }
+            #div9{
+                position: absolute;
+                top: 70px;
+                left:411px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars 10s infinite;
+            }
+            #div10{
+                position: absolute;
+                top: 380px;
+                left:169px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars 10s infinite;
+            }
+
+            #div11{
+                position: absolute;
+                top: 852px;
+                left:421px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars2 10s infinite;
+            }
+            #div12{
+                position: absolute;
+                top: 580px;
+                left:411px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars 10s infinite;
+            }
+            #div13{
+                position: absolute;
+                top: 788px;
+                left:1228px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars 10s infinite;
+            }
+
+            #div14{
+                position: absolute;
+                top: 800px;
+                left:520px;
+        		width: 2vw;
+                height: 2vw;
+                border-radius: 50%;
+                background: rgb(255, 255, 173);
+                animation: stars2 10s infinite;
+            }
+            @keyframes flyfly{
+                0% {
+                    left: -200px;
+                    top: 50px;
+                }
+                25% {
+                    left: -200px;
+                    top: 50px;
+                }
+                70% {
+                    left: 1590px;
+                    top: 500px;
+                    transform: rotate(720deg);
+                }
+                75% {
+                    left: 1590px;
+                    top: 100px;
+                    transform: rotate(-45deg);
+                }
+
+                100% {
+                    left: -900px;
+                    top: 1000px;
+                    transform: rotate(180deg);
+                }
+            }
+
+            @keyframes stars {
+                0% {
+                    background:rgb(255, 255, 173, 0);
+                    
+                }
+                25% {
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+                35% {
+                    width:50px;
+                    height: 50px;
+                    border-radius: 100%;
+                }
+                45% {
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+                55% {
+                    width:50px;
+                    height: 50px;
+                    border-radius: 100%;
+                }
+                65% {
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+                75% {
+                    width:50px;
+                    height: 50px;
+                    border-radius: 100%;
+                }
+                85% {
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+            }
+
+            @keyframes stars2 {
+                0% {
+                    background:rgb(255, 255, 173, 0);
+                    
+                }
+                25% {
+                    width:30px;
+                    height: 30px;
+                    border-radius: 100%;
+                }
+                35% {
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+                45% {
+                    width:30px;
+                    height: 30px;
+                    border-radius: 100%;
+                }
+                55% {
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+                65% {
+                    width:30px;
+                    height: 30px;
+                    border-radius: 100%;
+                }
+                75% {
+                    width:10px;
+                    height: 10px;
+                    border-radius: 100%;
+                }
+                85% {
+                    width:30px;
+                    height: 30px;
+                    border-radius: 100%;
+                }
+            }
+            @keyframes bigger {
+                0% {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(90%,30%) rotate(45deg);
+                    width:500px;
+                    height: 500px;
+                    border-radius: 100%;
+                    background: white;
+                }
+            
+                100% {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-70%,-70%) rotate(90deg);
+                    width: 2000px;
+                    height: 2000px;
+                    border-radius: 100%;
+                    background: #fff59b;
+                }
+            }
+
+            @keyframes glow {
+                0%   { background-color: #f8baff; }
+                25% { background-color: #40469b; }
+                100%   { background-color: #1e236b; }
+            }
+
         }
         
         @media screen and (min-width: 1221px) and (max-width: 1300px) {
             /* Jada */
             body {
-                background-color: #31b3f4;
+                background-color: #f8baff;
                 animation: glow 5s infinite;
             }
 
