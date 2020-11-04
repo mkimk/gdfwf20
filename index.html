@@ -158,6 +158,167 @@
         
         @media screen and (min-width: 1381px) and (max-width: 1460px) {
             /* Skylar */
+            body{
+                background-color: #1e236b;
+                animation-name: colors;
+                -webkit-animation: changecolor 8s, ease infinite normal;
+            }
+            @-webkit-keyframes changecolor{
+                0% {
+                    background-color: #1e236b;
+                }
+                50%{
+                    background-color: steelblue;
+                }
+                100%{
+                    background-color: darkslategrey;
+                }
+            }
+            #div1{
+                background: white;
+                border-radius: 50%;
+                width:100px;
+                height: 100px;
+                top:-100px;
+                left: -100px;
+                position: absolute;
+                animation: enlarge 6s linear;
+                animation-iteration-count: 1;
+            }
+            
+            @keyframes enlarge{
+                0%{
+                    width: 100px;
+                    height: 100px;
+                }
+                100%{
+                    width: 3000px;
+                    height: 3000px;
+                    top: 200%;
+                    left: 200%;
+                }
+            }
+            #div2{
+                background: #1e236b;
+                width:20px;
+                height: 20px;
+                top:5%;
+                left: 5%;
+                position: absolute;
+                border-radius: 50%;
+                animation: size 5s linear infinite;
+            }
+            #div3{
+                background: #1e236b;
+                width:20px;
+                height: 20px;
+                top:5%;
+                left: 50%;
+                position: absolute;
+                border-radius: 50%;
+                animation: size 5s linear infinite;
+            }
+            #div4{
+                background: #1e236b;
+                width:20px;
+                height: 20px;
+                top:5%;
+                left: 90%;
+                position: absolute;
+                border-radius: 50%;
+                animation: size 5s linear infinite;
+            }
+
+            @keyframes size{
+                0%{
+                width:20px;
+                height: 20px;
+                }
+                50%{
+                    width: 40px;
+                    height: 40px;
+                }
+                100%{
+                width:60px;
+                height: 60px;
+                }
+            } 
+            #div5{
+                background: orange;
+                width: 10px;
+                height:10px;
+                position: absolute;
+                animation: square 3s linear alternate-reverse infinite;
+            }
+            #div6{
+                background: orange;
+                width: 50px;
+                height:50px;
+                left: 300px;
+                position: absolute;
+                animation: square 3s linear alternate-reverse infinite;
+            }
+            #div7{
+                background: orange;
+                width: 80px;
+                height:80px;
+                left: 600px;
+                position: absolute;
+                animation: square 3s linear alternate-reverse infinite;
+            }
+            #div8{
+                background: orange;
+                width: 100px;
+                height:100px;
+                left: 1000px;
+                position: absolute;
+                animation: square 3s linear alternate-reverse infinite;
+            }
+            #div9{
+                background: orange;
+                width: 120px;
+                height:120px;
+                left: 1300px;
+                position: absolute;
+                animation: square 3s linear alternate-reverse infinite;
+            }
+            @keyframes square{
+                0%{
+                    border-radius: 0%;
+                transform: translateY(30vw) rotate(45deg);
+                }
+                50%{
+                    border-radius: 25%;
+                    transform: translateY(60vw) rotate(90deg);
+                }
+                100%{
+                    border-radius: 50%;
+                    transform: translateY(100vw) rotate(135deg);
+                }
+            }
+            #div10{
+                background: white;
+                border-radius: 50%;
+                width:100px;
+                height: 100px;
+                bottom:-100px;
+                right: -100px;
+                position: absolute;
+                animation: eenlarge 6s 6s linear infinite;
+            }
+            
+            @keyframes eenlarge{
+                0%{
+                    width: 100px;
+                    height: 100px;
+                }
+                100%{
+                    width: 3000px;
+                    height: 3000px;
+                    bottom: 200%;
+                    right: 200%;
+                }
+            }
         }
         
         @media screen and (min-width: 1301px) and (max-width: 1380px) {
